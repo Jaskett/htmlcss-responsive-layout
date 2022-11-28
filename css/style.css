@@ -49,6 +49,11 @@
     padding-bottom: 2.5rem;
 }
 
+.marginy-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
 .marginy-2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -60,22 +65,21 @@ header nav {
 }
 
 /* Main */
+/* Prima Sezione */
 #first-section .card {
     background-color: var(--primary-color-light);
 }
 
+/* Seconda Sezione */
+#second-section {
+    background-color: var(--secondary-color);
+}
+
+#second-section .container {
+    background-color: var(--secondary-color-light);
+}
+
 /* Footer */
-
-/* Media Query */
-/* Smartphone -> Tablet */
-@media screen and (min-width: 480px) {
-    
-}
-
-/* Tablet -> Desktop */
-@media screen and (min-width: 768px) {
-    
-}
 
 /* Debug */
 .debug * {
@@ -84,4 +88,8 @@ header nav {
 
 .debug .header-content {
     background-color: lightblue;
+}
+
+.debug .card {
+    height: 40vh;
 }
