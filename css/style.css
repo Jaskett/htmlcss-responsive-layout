@@ -17,6 +17,10 @@
     color: white;
 }
 
+.d-none {
+    display: none;
+}
+
 .d-flex {
     display: flex;
 }
@@ -27,6 +31,11 @@
 
 .just-sp-between {
     justify-content: space-between;
+}
+
+.padx-1_5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .padx-2 {
@@ -75,7 +84,27 @@
     height: 100%;
 }
 
+.list-st-ty-n {
+    list-style-type: none;
+}
+
+.text-dec-n {
+    text-decoration: none;
+}
+
 .card {
+    border-radius: 30px;
+}
+
+.btn {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.btn-ty2 {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
     border-radius: 30px;
 }
 
@@ -100,9 +129,6 @@ header nav {
 }
 
 /* Terza Sezione */
-#third-section .section-title {
-    text-align: center;
-}
 
 #third-section .card {
     background-color: var(--secondary-color);
