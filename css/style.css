@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Regole Generali */
@@ -11,6 +12,10 @@
     --primary-color-light: #b5ddff;
     --secondary-color: #9792e4;
     --secondary-color-light: #cbc9f1;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .col-w {
@@ -48,6 +53,10 @@
     padding-right: 2.5rem;
 }
 
+.t-align-l {
+    text-align: left;
+}
+
 .t-align-c {
     text-align: center;
 }
@@ -80,8 +89,8 @@
     height: 60%;
 }
 
-.h-100 {
-    height: 100%;
+.w-50 {
+    width: 50%;
 }
 
 .list-st-ty-n {
@@ -92,20 +101,18 @@
     text-decoration: none;
 }
 
-.card {
+.b-rad-30 {
     border-radius: 30px;
 }
 
 .btn {
-    background-color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 30px;
+    font-weight: bold;
 }
 
-.btn-ty2 {
-    background-color: var(--secondary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
+.btn-ty1 {
+    background-color: var(--primary-color);
 }
 
 /* Header */
@@ -163,7 +170,7 @@ footer p:last-child {
 }
 
 /* Media Query */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
     /* MQ Prima Sezione */
     #first-section .container {
         display: flex;
@@ -178,6 +185,10 @@ footer p:last-child {
     #first-section .container .card {
         width: calc(33.333% - 1.5rem);
         margin: 0.75rem 0.75rem;
+    }
+
+    #first-section .card-sub-c {
+        display: flex;
     }
     
     /* MQ Terza Sezione */
@@ -221,7 +232,7 @@ footer p:last-child {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .header-container {
         width: 80%;
         margin: auto;
@@ -265,7 +276,7 @@ footer p:last-child {
         margin: auto;
     }
 
-    #second-section .container .card {
+    #foruth-section .container .card {
         width: 32%;
     }
 
@@ -275,18 +286,18 @@ footer p:last-child {
         margin: auto;
     }
 
+    #fifth-section .container .card:first-child {
+        width: 65%;
+    }
+
+    #fifth-section .container .card {
+        width: 30%;
+    }
+
     /* MQ Sesta Sezione */
     #sixth-section .container {
         width: 60%;
         margin: auto;
-    }
-
-    #sixth-section .container .card:first-child {
-        width: 65%;
-    }
-
-    #sixth-section .container .card {
-        width: 30%;
     }
 
     /* MQ Footer */
@@ -328,21 +339,4 @@ footer p:last-child {
     #footer .container {
         width: 40%;
     }
-}
-
-/* Debug */
-.debug * {
-    border: 2px dashed black;
-}
-
-.debug .header-content {
-    background-color: lightblue;
-}
-
-.debug .card {
-    height: 40vh;
-}
-
-.debug footer .container p {
-    background-color: lightcoral;
 }
