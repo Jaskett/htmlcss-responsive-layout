@@ -12,6 +12,7 @@
     --primary-color-light: #b5ddff;
     --secondary-color: #9792e4;
     --secondary-color-light: #cbc9f1;
+    --white-background: white;
 }
 
 body {
@@ -89,6 +90,10 @@ body {
     height: 60%;
 }
 
+.w-30 {
+    width: 30%;
+}
+
 .w-50 {
     width: 50%;
 }
@@ -105,10 +110,21 @@ body {
     border-radius: 30px;
 }
 
+.b-rad-50 {
+    border-radius: 50%;
+}
+
 .btn {
+    background-color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
     font-weight: bold;
+}
+
+.btn-round {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 .btn-ty1 {
@@ -126,6 +142,10 @@ header nav {
     background-color: var(--primary-color-light);
 }
 
+#first-section .card i {
+    color: var(--primary-color);
+}
+
 /* Seconda Sezione */
 #second-section {
     background-color: var(--secondary-color);
@@ -133,6 +153,10 @@ header nav {
 
 #second-section .container {
     background-color: var(--secondary-color-light);
+}
+
+#second-section .card {
+    background-color: var(--white-background);
 }
 
 /* Terza Sezione */
