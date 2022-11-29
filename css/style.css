@@ -36,12 +36,20 @@ body {
     display: flex;
 }
 
+.d-block {
+    display: block;
+}
+
 .al-items-c {
     align-items: center;
 }
 
 .just-sp-between {
     justify-content: space-between;
+}
+
+.just-c {
+    justify-content: center;
 }
 
 .padx-1_5 {
@@ -67,8 +75,9 @@ body {
     text-align: center;
 }
 
-.pady-2-t {
-    padding-top: 2rem;
+.pady-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .pady-2 {
@@ -80,9 +89,8 @@ body {
     padding-bottom: 2rem;
 }
 
-.pady-1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.pad_y-2-t {
+    padding-top: 2rem;
 }
 
 .pady-2_5 {
@@ -98,6 +106,10 @@ body {
 .marginy-2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.marginy-4-b {
+    margin-bottom: 4rem;
 }
 
 .marginx-2 {
@@ -121,12 +133,20 @@ body {
     width: 50%;
 }
 
+.w-80 {
+    width: 80%;
+}
+
 .list-st-ty-n {
     list-style-type: none;
 }
 
 .text-dec-n {
     text-decoration: none;
+}
+
+.line-h-0_5 {
+    line-height: 1.5rem;
 }
 
 .b-rad-30 {
@@ -139,7 +159,7 @@ body {
 
 .btn {
     background-color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
     font-weight: bold;
 }
@@ -151,7 +171,8 @@ body {
 }
 
 .btn-xl {
-    padding: 0.5rem 3.5rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0 2rem;
 }
 
 .btn-ty1 {
@@ -206,6 +227,10 @@ header nav {
     background-color: var(--white-background);
 }
 
+#second-section h1 {
+    font-size: 30px;
+}
+
 /* Terza Sezione */
 #third-section .card {
     background-color: var(--secondary-color);
@@ -213,6 +238,10 @@ header nav {
 
 #third-section .section-title h2 {
     background-color: var(--secondary-color);
+}
+
+#third-section .section-title h4 {
+    color: var(--light-gray);
 }
 
 /* Quarta Sezione */
@@ -253,17 +282,42 @@ footer p:last-child {
         padding: 1rem 1.75rem;
     }
 
-    #first-section .container .card:first-child {
-        width: calc(66.666% - 1.5rem);
+    #first-section .container div.card:first-child {
+        display: block;
+    }
+
+    #first-section #phone {
+        text-align: left;
+    }
+
+    .sec-ty {
+        width: calc(33.333% -1.5rem);
+    }
+
+    .sec-ty i {
+        margin-top: 3rem;
     }
 
     #first-section .container .card {
-        width: calc(33.333% - 1.5rem);
         margin: 0.75rem 0.75rem;
+        padding: 0;
+    }
+
+    #first-section #first-card {
+        width: calc(66.666% - 1.5rem);
     }
 
     #first-section .card-sub-c {
         display: flex;
+    }
+
+    #first-section .card-sub-c img {
+        width: 14rem;
+        margin: 1rem 2 rem -0.3rem;
+    }
+
+    #first-section p:not(#first-card p) {
+        padding: 2rem 1rem;
     }
     
     /* MQ Terza Sezione */
@@ -316,6 +370,7 @@ footer p:last-child {
     .header-container {
         width: 80%;
         margin: auto;
+        align-items: center;
     }
 
     .header-container #nav-anchor {
@@ -327,8 +382,16 @@ footer p:last-child {
     }
 
     /* MQ Prima Sezione */
+    #first-section #phone {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #first-section #first-card:first-child {
+        display: flex;
+    }
+
     #first-section .container {
-        width: 80%;
         margin: auto;
     }
 
@@ -342,6 +405,24 @@ footer p:last-child {
 
     #second-section .container .card {
         width: 45%;
+    }
+
+    #second-section .container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #second-section .card-sub-c img {
+        margin: 4rem auto 0;
+        width: 60%;
+    }
+
+    #second-section .card h1 {
+        padding: 1rem;
+    }
+
+    #second-section .card p {
+        padding: 1rem;
     }
 
     /* MQ Terza Sezione */
@@ -394,34 +475,36 @@ footer p:last-child {
 
 @media screen and (min-width: 1200px) {
     .header-container {
-        width: 60%;
+        width: 70%;
     }
 
     #first-section .container {
-        width: 60%;
+        width: 70%;
+        margin: auto;
+        align-items: center;
     }
 
     #second-section .container {
-        width: 60%;
+        width: 70%;
     }
 
     #third-section .container, #third-section .section-title {
-        width: 60%;
+        width: 70%;
     }
 
     #fourth-section .container {
-        width: 60%;
+        width: 70%;
     }
 
     #fifth-section .container {
-        width: 60%;
+        width: 70%;
     }
 
     #sixth-section .container {
-        width: 40%;
+        width: 50%;
     }
 
     #footer .container {
-        width: 40%;
+        width: 50%;
     }
 }
