@@ -267,6 +267,13 @@ header nav {
     font-weight: 100
 }
 
+#third-section #img_round {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Quarta Sezione */
 #fourth-section, #fourth-section .btn {
     background-color: var(--secondary-color);
